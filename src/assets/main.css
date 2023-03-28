@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#app {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  color: #333;
+  font-size: 15px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin-bottom: 10px;
+  min-width: 123px;
+}
+
+legend {
+  font-size: 14px;
+  color: #3c8dbc;
+  border: 0;
+  text-align: left;
+  position: relative;
+  margin: 0;
+  text-indent: 0;
+  padding: 0;
+  max-width: 20%;
+  display: block;
+  line-height: inherit;
+  float: none !important;
+  width: auto !important;
+}
