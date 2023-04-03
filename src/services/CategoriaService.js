@@ -2,8 +2,7 @@ import { useCategoriaStore } from "../stores/categoria";
 import { httpClient } from "../infra/httpClient";
 
 export function useCategoriaService() {
-
-  const url = '/categoria';
+  const url = "/categoria";
 
   const categoriStore = useCategoriaStore();
 
@@ -13,12 +12,12 @@ export function useCategoriaService() {
         url,
         onSuccess: (res) => {
           categoriStore.addCategorias(res.data);
-        }
-      })
+        },
+      });
     }
 
     return Promise.resolve();
-  }
+  };
 
-  return { carregar }
+  return { carregar };
 }

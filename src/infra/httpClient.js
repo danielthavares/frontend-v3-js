@@ -47,16 +47,12 @@ export function httpClient() {
       instance
         .get(url, { params, ...config })
         .then((res) => {
-          if (onSuccess)
-            resolve(onSuccess(res.data));
-          else
-            resolve(res.data);
+          if (onSuccess) resolve(onSuccess(res.data));
+          else resolve(res.data);
         })
         .catch((err) => {
-          if (onError)
-            reject(onError(err));
-          else
-            reject(errorResponse(err));
+          if (onError) reject(onError(err));
+          else reject(errorResponse(err));
         });
     });
   }
@@ -66,16 +62,12 @@ export function httpClient() {
       instance
         .post(url, data, config)
         .then((res) => {
-          if (onSuccess)
-            resolve(onSuccess(res.data));
-          else
-            resolve(res.data);
+          if (onSuccess) resolve(onSuccess(res.data));
+          else resolve(res.data);
         })
         .catch((err) => {
-          if (onError)
-            reject(onError(err));
-          else
-            reject(errorResponse(err));
+          if (onError) reject(onError(err));
+          else reject(errorResponse(err));
         });
     });
   }
@@ -85,16 +77,12 @@ export function httpClient() {
       instance
         .put(url, data, config)
         .then((res) => {
-          if (onSuccess)
-            resolve(onSuccess(res.data));
-          else
-            resolve(res.data);
+          if (onSuccess) resolve(onSuccess(res.data));
+          else resolve(res.data);
         })
         .catch((err) => {
-          if (onError)
-            reject(onError(err));
-          else
-            reject(errorResponse(err));
+          if (onError) reject(onError(err));
+          else reject(errorResponse(err));
         });
     });
   }
@@ -104,16 +92,12 @@ export function httpClient() {
       instance
         .patch(url, data, config)
         .then((res) => {
-          if (onSuccess)
-            resolve(onSuccess(res.data));
-          else
-            resolve(res.data);
+          if (onSuccess) resolve(onSuccess(res.data));
+          else resolve(res.data);
         })
         .catch((err) => {
-          if (onError)
-            reject(onError(err));
-          else
-            reject(errorResponse(err));
+          if (onError) reject(onError(err));
+          else reject(errorResponse(err));
         });
     });
   }
@@ -123,16 +107,12 @@ export function httpClient() {
       instance
         .delete(url, config)
         .then((res) => {
-          if (onSuccess)
-            resolve(onSuccess(res.data));
-          else
-            resolve(res.data);
+          if (onSuccess) resolve(onSuccess(res.data));
+          else resolve(res.data);
         })
         .catch((err) => {
-          if (onError)
-            reject(onError(err));
-          else
-            reject(errorResponse(err));
+          if (onError) reject(onError(err));
+          else reject(errorResponse(err));
         });
     });
   }
@@ -142,6 +122,6 @@ export function httpClient() {
     post,
     put,
     patch,
-    remove
+    remove,
   };
 }

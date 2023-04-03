@@ -1,12 +1,12 @@
 import { httpClient } from "../infra/httpClient";
 
 export function useProdutoService() {
-
-  const url = '/produto';
+  const url = "/produto";
 
   const { get, post, put, remove } = httpClient();
 
-  const pesquisar = ({ page, params }) => get({ url: page ? page : url, params });
+  const pesquisar = ({ page, params }) =>
+    get({ url: page ? page : url, params });
 
   const novo = (data) => post({ url, data });
 
@@ -21,6 +21,6 @@ export function useProdutoService() {
     novo,
     editar,
     carregar,
-    excluir
-  }
+    excluir,
+  };
 }
